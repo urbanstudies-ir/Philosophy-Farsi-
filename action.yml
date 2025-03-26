@@ -1,0 +1,17 @@
+name: 'DDP Knowledge Graph Action'
+description: 'Transform philosophical terms into RDF/OWL with SKOS and DDP API support'
+author: 'urbanstudies-ir'
+branding:
+  icon: 'book'
+  color: 'blue'
+inputs:
+  input_path:
+    description: 'Path to input concept files'
+    required: true
+  output_format:
+    description: 'Format of the RDF output (e.g. turtle, rdfxml)'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+privacyPolicyUrl: 'https://urbanstudies-ir.github.io/Philosophy-Farsi-/privacy-policy.html'
